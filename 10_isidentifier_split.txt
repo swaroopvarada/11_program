@@ -1,0 +1,163 @@
+""" isidentifier() , islower() , isnumeric() , isprintable() , isspace() ,
+istitle() , isupper() , join() ,ljust() , lower() , split() """
+
+#isidentifier()
+
+a = "swaroop"
+x = a.isidentifier()
+print(x)
+
+a = "_swaroop"
+x = a.isidentifier()
+print(x)
+
+a = "1swaroop"
+x = a.isidentifier()
+print(x)
+
+a = " swaroop"
+x = a.isidentifier()
+print(x)
+
+a = "_56swaroop"
+x = a.isidentifier()
+print(x)
+
+a = "swaroop is a bad man"
+x = a.isidentifier()
+print(x)
+
+#islower()
+
+a='Swaroop'
+print(a.islower())
+
+a='swaroop'
+print(a.islower())
+
+a='swaroop5'
+print(a.islower())
+
+a='_swaroop'
+print(a.islower())
+
+a=' swaroop'
+print(a.islower())
+
+a='5swaroop'
+print(a.islower())
+
+#isnumeric()
+
+a = "\u0030" 
+b = "\u00B2" 
+c = "10km2"
+d = "-1"
+e = "1.5"
+f="\u0085"
+
+print(a.isnumeric())
+print(b.isnumeric())
+print(c.isnumeric())
+print(d.isnumeric())
+print(e.isnumeric())
+print(f.isnumeric())
+
+#isprintable()
+
+a= "Hello!\nAre you #1?"
+x = a.isprintable()
+print(x)
+
+a="Hello! Are you #1?"
+x = a.isprintable()
+print(x)
+
+#isspace()
+
+a = "   "
+x = a.isspace()
+print(x)
+
+a=' india '
+print(a.isspace())
+
+#istitle()
+
+a='india'
+print(a.istitle())
+
+b='India'
+print(b.istitle())
+
+c='_India'
+print(c.istitle())
+
+d='India is the best country'
+print(d.istitle())
+
+e='India Is The Best Country'
+print(e.istitle())
+
+f='2_India_'
+print(f.istitle())
+
+#isupper()
+
+a='INDIA'
+print(a.isupper())
+
+b='India'
+print(b.isupper())
+
+c='_INDIA'
+print(c.isupper())
+
+d='52_INDIA'
+print(d.isupper())
+
+#join()
+
+a='india is the best country'
+print('#'.join(a))
+
+b={'india' , 'srilanka' , 'nepal'}
+print('bhutan'.join(b))
+
+#ljust()
+
+a='Indi'
+print(a.ljust(5,'a'))
+
+
+#lower()
+
+a='INDIA IS THE BEST COUNTRY'
+print(a.lower())
+
+b='_INDIA IS THE BEST COUNTRY'
+print(b.lower())
+
+c=' INDIA IS THE BEST COUNTRY'
+print(c.lower())
+
+d='5INDIA IS THE BEST COUNTRY'
+print(d.lower())
+
+#split()
+
+a='india is the best country'
+print(a.split())
+
+b={'india' , 'is' , 'the' , 'best' , 'country'}
+print(a.split('#',1))
+
+c='india@is@the@best@country'
+print(c.split("@",4))
+
+
+
+
+
+
+
